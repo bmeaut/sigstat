@@ -5,7 +5,7 @@ using System.Text;
 namespace SigStat.Common.Algorithms
 {
     /// <summary>
-    /// Dynamic Time Warping algorithm
+    /// Dynamic Time Warping algorithm teszt comment 1
     /// </summary>
     public class Dtw
     {
@@ -13,14 +13,14 @@ namespace SigStat.Common.Algorithms
         private double[,] wMat;
 
         /// <summary>
-        /// Gets the list of points representing the shortest path.
+        /// Gets the list of points representing the shortest path. teszt comment 2
         /// </summary>
         public List<(int, int)> ForwardPath { get; private set; }
 
         private readonly Func<double[], double[], double> distMethod;
 
         /// <summary>
-        /// Initialize the DTW algorithm with the default Euclidean distance method.
+        /// Initialize the DTW algorithm with the default Euclidean distance method. teszt comment 3
         /// </summary>
         public Dtw()
         {
@@ -28,7 +28,7 @@ namespace SigStat.Common.Algorithms
         }
 
         /// <summary>
-        /// Initialize the DTW algorithm with given distance method.
+        /// Initialize the DTW algorithm with given distance method. teszt comment 4
         /// </summary>
         /// <param name="distMethod">Accord.Math.Distance.*</param>
         public Dtw(Func<double[], double[], double> distMethod)
